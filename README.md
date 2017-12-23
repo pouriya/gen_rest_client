@@ -5,7 +5,7 @@ This simple library performs HTTP request and waits for JSON response and passes
 ```sh
 ~/gen_rest_client $ curl http://www.convert-unix-time.com/api?timestamp=now
 ```
-```json
+```javascript
 {"localDate":"Saturday 23rd December 2017 08:35:22 PM","utcDate":"Saturday 23rd December 2017 08:35:22 PM","format":"l jS F Y h:i:s A","returnType":"json","timestamp":1514061322,"timezone":"UTC","daylightSavingTime":false,"url":"http:\/\/www.convert-unix-time.com?t=1514061322"}
 ``` 
 
