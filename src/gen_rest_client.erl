@@ -131,7 +131,14 @@ request(Host
 
 
 -spec
-request(host(), init_argument(), filter(), path(), request_type(), method(), headers(), body()) ->
+request(host()
+       ,init_argument()
+       ,filter()
+       ,path()
+       ,request_type()
+       ,method()
+       ,headers()
+       ,send_body()) ->
     {'ok', term()} | {'error', {atom(), list()}}.
 %% @doc
 %%      See request/9 details.
@@ -160,7 +167,7 @@ request(host()
        ,request_type()
        ,method()
        ,headers()
-       ,body()
+       ,send_body()
        ,timeout()) ->
     {'ok', term()} | {'error', {atom(), list()}}.
 %% @doc
