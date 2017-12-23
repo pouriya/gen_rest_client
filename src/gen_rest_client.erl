@@ -164,11 +164,11 @@ request(host()
        ,timeout()) ->
     {'ok', term()} | {'error', {atom(), list()}}.
 %% @doc
-%%      Makes HTTP request to host <code>Host</code> for path <code>path</code> with HTTP method</br>
-%%      <code>Method</code> and headers <code>Headers</code> and body <code>Body</code>.Then</br>
-%%      runs <code>Filter(List, HTTPStatusCode, JSON)</code> with parsed body.Filter fun should</br>
-%%      give <code>{ok, Result::term()}</code> or <code>{error, {Rsn, ErrParams}}</code>.</br>
-%%      <code>Rsn</code> is reason of error and <code>ErrParams</code> is a proplist containing</br>
+%%      Makes HTTP request to host <code>Host</code> for path <code>path</code> with HTTP method<br/>
+%%      <code>Method</code> and headers <code>Headers</code> and body <code>Body</code>.Then<br/>
+%%      runs <code>Filter(List, HTTPStatusCode, JSON)</code> with parsed body.Filter fun should<br/>
+%%      give <code>{ok, Result::term()}</code> or <code>{error, {Rsn, ErrParams}}</code>.<br/>
+%%      <code>Rsn</code> is reason of error and <code>ErrParams</code> is a proplist containing<br/>
 %%      information about error.
 %% @end
 request(Host
@@ -243,9 +243,9 @@ request(Host
 value(init_argument(), [{Key::binary(), Val::term()}] | []) ->
     map().
 %% @doc
-%%      Finds in <code>Proplist</code> for keys in option list <code>List</code>. If found a</br>
-%%      value, adds that value with its key in returning map, if did not find and key has</br>
-%%      default adds key with its default value in returning map, otherwise adds key and atom</br>
+%%      Finds in <code>Proplist</code> for keys in option list <code>List</code>. If found a<br/>
+%%      value, adds that value with its key in returning map, if did not find and key has<br/>
+%%      default adds key with its default value in returning map, otherwise adds key and atom<br/>
 %%      'undefined' in returning map.
 %% @end
 value(OptList, Proplist) ->
