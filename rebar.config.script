@@ -1,0 +1,9 @@
+case erlang:function_exported(rebar3, module_info, 0) of
+    true ->
+        CONFIG;
+    false ->
+        Cfg2 = lists:keydelete(deps, 1, CONFIG),
+        Ibrowse = {ibrowse, ".*", {git, "https://github.com/cmullaparthi/ibrowse.git", {tag, "v4.4.0"}}},
+        Jiffy = {jiffy, ".*", {git, "https://github.com/davisp/jiffy.git", {tag, "0.14.13"}}},
+        [{deps, [Ibrowse, Jiffy]}|Cfg2]
+end.
