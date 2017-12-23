@@ -271,6 +271,6 @@ value([{Key, Def}|Rest], Proplist, Ret) ->
         end,
     value(Rest, Proplist, Ret#{Key => Val});
 value([Key|Rest], Proplist, Ret) ->
-    value([{Key, null}|Rest], Proplist, Ret);
+    value([{Key, default}|Rest], Proplist, Ret);
 value([], _, Ret) ->
     Ret.
