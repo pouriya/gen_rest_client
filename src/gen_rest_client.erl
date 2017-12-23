@@ -252,8 +252,8 @@ value(init_argument(), [{Key::binary(), Val::term()}] | []) ->
 %% @doc
 %%      Finds in <code>Proplist</code> for keys in option list <code>List</code>. If found a<br/>
 %%      value, adds that value with its key in returning map, if did not find and key has<br/>
-%%      default adds key with its default value in returning map, otherwise adds key and atom<br/>
-%%      'undefined' in returning map.
+%%      default value, adds key with its default value in returning map, otherwise adds key and<br/>
+%%      atom 'undefined' in returning map.
 %% @end
 value(OptList, Proplist) ->
     value(OptList, Proplist, #{}).
